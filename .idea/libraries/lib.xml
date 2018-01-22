@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/PublicLibraries/lib/esri_mo20res.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/PublicLibraries/lib/esri_mo20.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/PublicLibraries/lib/esri_mo20img.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

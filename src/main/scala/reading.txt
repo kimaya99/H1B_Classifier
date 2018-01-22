@@ -1,0 +1,298 @@
+    RANDOM FOREST CLASSIFIER:
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990)
+
+    17/12/14 15:57:32 ERROR root: ACCURACY: 0.8627619164318098
+    17/12/14 15:57:45 ERROR root: PRECISION: 0.9970270245261927
+    17/12/14 15:57:45 ERROR root: RECALL: 0.8627619164318099
+    17/12/14 15:57:45 ERROR root:  Total time taken:  598.908264298 seconds
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3)
+    17/12/14 16:06:13 ERROR root: ACCURACY: 0.8630880367506532
+    17/12/14 16:06:25 ERROR root: PRECISION: 0.999010144853196
+    17/12/14 16:06:25 ERROR root: RECALL: 0.8630880367506532
+    17/12/14 16:06:25 ERROR root:  Total time taken:  194.742277902 seconds
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(5)
+    17/12/14 17:12:34 ERROR root: ACCURACY: 0.8622696241247251
+    17/12/14 17:12:47 ERROR root: PRECISION: 0.9975392339967626
+    17/12/14 17:12:47 ERROR root: RECALL: 0.8622696241247251
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setMinInfoGain(100)
+
+
+    17/12/14 17:18:01 ERROR root: ACCURACY: 0.8614190299681784
+    17/12/14 17:18:12 ERROR root: PRECISION: 1.0
+    17/12/14 17:18:12 ERROR root: RECALL: 0.8614190299681784
+    17/12/14 17:18:12 ERROR root:  Total time taken:  92.875403658 seconds
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setMinInfoGain(500)
+
+
+    17/12/14 17:24:07 ERROR root: ACCURACY: 0.8602002886255302
+    17/12/14 17:24:19 ERROR root: PRECISION: 1.0
+    17/12/14 17:24:19 ERROR root: RECALL: 0.8602002886255302
+    17/12/14 17:24:19 ERROR root:  Total time taken:  93.760068723 seconds
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setMinInfoGain(1000)
+
+    17/12/14 17:37:26 ERROR root: ACCURACY: 0.8596569645658595
+    17/12/14 17:37:37 ERROR root: PRECISION: 1.0
+    17/12/14 17:37:37 ERROR root: RECALL: 0.8596569645658595
+    17/12/14 17:37:37 ERROR root:  Total time taken:  89.817998684 seconds
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setMinInfoGain(5000)
+
+    17/12/14 17:41:06 ERROR root: ACCURACY: 0.8608311182461773
+    17/12/14 17:41:17 ERROR root: PRECISION: 1.0
+    17/12/14 17:41:17 ERROR root: RECALL: 0.8608311182461773
+    17/12/14 17:41:17 ERROR root:  Total time taken:  92.388265579 seconds
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setNumTrees(100)
+
+
+    17/12/14 18:56:36 ERROR root: ACCURACY: 0.8611438808056976
+    17/12/14 18:56:57 ERROR root: PRECISION: 1.0
+    17/12/14 18:56:57 ERROR root: RECALL: 0.8611438808056976
+    17/12/14 18:56:57 ERROR root:  Total time taken:  734.78036216 seconds
+
+
+
+    val rf = new RandomForestClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18990).setMaxDepth(3).setNumTrees(500)
+
+
+    17/12/14 18:56:36 ERROR root: ACCURACY: 0.8602438808056976
+    17/12/14 18:56:57 ERROR root: PRECISION: 1.0
+    17/12/14 18:56:57 ERROR root: RECALL: 0.8611438808056976
+    17/12/14 18:56:57 ERROR root:  Total time taken:  1345.78036216 seconds
+
+
+
+
+    LOGISTIC REGRESSION:
+
+    val rf = new LogisticRegression().setMaxIter(1000)
+
+    17/12/16 22:58:28 ERROR root: ACCURACY: 0.8601316572709129
+    17/12/16 22:58:30 ERROR root: PRECISION: 1.0
+    17/12/16 22:58:30 ERROR root: RECALL: 0.8601316572709129
+    17/12/16 22:58:30 ERROR root: Total time taken: 25.319694423 seconds
+
+
+    val rf = new LogisticRegression().setMaxIter(2000)
+    17/12/16 23:00:20 ERROR root: ACCURACY: 0.8614709933913407
+    17/12/16 23:00:22 ERROR root: PRECISION: 1.0
+    17/12/16 23:00:22 ERROR root: RECALL: 0.8614709933913407
+    17/12/16 23:00:22 ERROR root: Total time taken: 24.305722967 seconds
+
+    val rf = new LogisticRegression().setMaxIter(3000)
+
+    17/12/16 23:01:41 ERROR root: ACCURACY: 0.8607678264227785
+    17/12/16 23:01:44 ERROR root: PRECISION: 1.0
+    17/12/16 23:01:44 ERROR root: RECALL: 0.8607678264227785
+    17/12/16 23:01:44 ERROR root: Total time taken: 28.017680242 seconds
+
+    val rf = new LogisticRegression().setMaxIter(5000)
+
+    17/12/16 23:04:56 ERROR root: ACCURACY: 0.8623326122559796
+    17/12/16 23:04:58 ERROR root: PRECISION: 1.0
+    17/12/16 23:04:58 ERROR root: RECALL: 0.8623326122559796
+    17/12/16 23:04:58 ERROR root: Total time taken: 25.553902828 seconds
+
+
+    val rf = new LogisticRegression()
+      .setMaxIter(1000)
+      .setRegParam(0.3)
+      .setElasticNetParam(0.8)
+      .setFamily("multinomial")
+
+
+
+    17/12/16 22:55:53 ERROR root: ACCURACY: 0.8601288837343146
+    17/12/16 22:55:56 ERROR root: PRECISION: 1.0
+    17/12/16 22:55:56 ERROR root: RECALL: 0.8601288837343146
+    17/12/16 22:55:56 ERROR root: Total time taken: 30.751105525 seconds
+
+
+
+    val rf = new LogisticRegression().setMaxIter(5000)
+
+    17/12/17 18:45:53 ERROR root: ACCURACY: 0.8618711850136813
+    17/12/17 18:45:56 ERROR root: PRECISION: 1.0
+    17/12/17 18:45:56 ERROR root: RECALL: 0.8618711850136813
+    17/12/17 18:45:56 ERROR root: Total time taken: 28.019562544 seconds
+
+    val rf = new LogisticRegression().setMaxIter(10000)
+
+    17/12/17 18:37:35 ERROR root: ACCURACY: 0.8611302760626359
+    17/12/17 18:37:38 ERROR root: PRECISION: 1.0
+    17/12/17 18:37:38 ERROR root: RECALL: 0.8611302760626359
+    17/12/17 18:37:38 ERROR root: Total time taken: 26.56372376 seconds
+
+     val rf = new LogisticRegression().setMaxIter(1000)
+
+    17/12/17 18:47:37 ERROR root: ACCURACY: 0.8630754419744443
+    17/12/17 18:47:39 ERROR root: PRECISION: 1.0
+    17/12/17 18:47:39 ERROR root: RECALL: 0.8630754419744443
+    17/12/17 18:47:39 ERROR root: Total time taken: 27.575006754 seconds
+
+
+        val rf = new LogisticRegression().setMaxIter(1000).setElasticNetParam(0.8)
+        17/12/17 18:54:05 ERROR root: ACCURACY: 0.8612096830862203
+        17/12/17 18:54:08 ERROR root: PRECISION: 1.0
+        17/12/17 18:54:08 ERROR root: RECALL: 0.8612096830862203
+        17/12/17 18:54:08 ERROR root: Total time taken: 29.582345881 seconds
+
+            val rf = new LogisticRegression().setMaxIter(1000).setElasticNetParam(1)
+    17/12/17 18:56:30 ERROR root: ACCURACY: 0.86106166893519
+    17/12/17 18:56:32 ERROR root: PRECISION: 1.0
+    17/12/17 18:56:32 ERROR root: RECALL: 0.86106166893519
+    17/12/17 18:56:32 ERROR root: Total time taken: 30.713185673 seconds
+
+
+
+val rf = new LogisticRegression().setMaxIter(1000).setElasticNetParam(0)
+
+    17/12/17 18:57:41 ERROR root: ACCURACY: 0.8610848312835068
+    17/12/17 18:57:44 ERROR root: PRECISION: 1.0
+    17/12/17 18:57:44 ERROR root: RECALL: 0.8610848312835068
+    17/12/17 18:57:44 ERROR root: Total time taken: 24.810931396 seconds
+
+val rf = new LogisticRegression().setMaxIter(1000).setElasticNetParam(0.5)
+17/12/19 19:18:41 ERROR root: ACCURACY: 0.8616825380123112
+17/12/19 19:18:42 ERROR root: PRECISION: 1.0
+17/12/19 19:18:42 ERROR root: RECALL: 0.8616825380123112
+17/12/19 19:18:42 ERROR root: Total time taken: 18.105306224 seconds
+
+val rf = new LogisticRegression().setMaxIter(1000).setThreshold(0.5)
+17/12/19 19:29:40 ERROR root: ACCURACY: 0.8614236801317022
+17/12/19 19:29:41 ERROR root: PRECISION: 1.0
+17/12/19 19:29:41 ERROR root: RECALL: 0.8614236801317022
+17/12/19 19:29:41 ERROR root: Total time taken: 14.415839292 seconds
+
+    val rf = new LogisticRegression().setMaxIter(1000).setThreshold(0.7)
+17/12/19 19:31:06 ERROR root: ACCURACY: 0.8621410332645423
+17/12/19 19:31:07 ERROR root: PRECISION: 1.0
+17/12/19 19:31:07 ERROR root: RECALL: 0.8621410332645423
+17/12/19 19:31:07 ERROR root: Total time taken: 14.665001616 seconds
+
+    val rf = new LogisticRegression().setMaxIter(1000).setThreshold(0.1)
+17/12/19 19:33:28 ERROR root: ACCURACY: 0.860003321184789
+17/12/19 19:33:29 ERROR root: PRECISION: 1.0
+17/12/19 19:33:29 ERROR root: RECALL: 0.860003321184789
+17/12/19 19:33:29 ERROR root: Total time taken: 17.13538687 seconds
+
+
+
+DECISION TREE:::
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979)
+17/12/19 19:39:03 ERROR root: ACCURACY: 0.8622764470094991
+17/12/19 19:39:05 ERROR root: PRECISION: 0.9902563488125887
+17/12/19 19:39:05 ERROR root: RECALL: 0.8622764470094991
+17/12/19 19:39:05 ERROR root: Total time taken: 32.02911198 seconds
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3).setImpurity("gini")
+17/12/19 20:36:38 ERROR root: ACCURACY: 0.860184640250169
+17/12/19 20:36:39 ERROR root: PRECISION: 0.9933836821365286
+17/12/19 20:36:39 ERROR root: RECALL: 0.860184640250169
+17/12/19 20:36:39 ERROR root: Total time taken: 18.118138237 seconds
+
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3)
+7/12/19 19:40:31 ERROR root: ACCURACY: 0.8602846167277807
+17/12/19 19:40:32 ERROR root: PRECISION: 0.9940984330462862
+17/12/19 19:40:32 ERROR root: RECALL: 0.8602846167277807
+17/12/19 19:40:32 ERROR root: Total time taken: 18.514436171 seconds
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(5)
+
+17/12/19 19:41:52 ERROR root: ACCURACY: 0.86202480571198
+17/12/19 19:41:53 ERROR root: PRECISION: 0.9923807879888564
+17/12/19 19:41:53 ERROR root: RECALL: 0.86202480571198
+17/12/19 19:41:53 ERROR root: Total time taken: 32.88547763 seconds
+
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(7)
+17/12/19 19:45:12 ERROR root: ACCURACY: 0.861380150584193
+17/12/19 19:45:14 ERROR root: PRECISION: 0.9907299134951653
+17/12/19 19:45:14 ERROR root: RECALL: 0.861380150584193
+17/12/19 19:45:14 ERROR root: Total time taken: 91.947973084 seconds
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(10)
+17/12/19 19:54:20 ERROR root: ACCURACY: 0.8576187603284107
+17/12/19 19:54:21 ERROR root: PRECISION: 0.9823238856157376
+17/12/19 19:54:21 ERROR root: RECALL: 0.8576187603284108
+17/12/19 19:54:21 ERROR root: Total time taken: 482.853484404 seconds
+
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3).setMinInstancesPerNode(10)
+17/12/19 20:30:29 ERROR root: ACCURACY: 0.8601959428106148
+17/12/19 20:30:31 ERROR root: PRECISION: 0.9930829647056254
+17/12/19 20:30:31 ERROR root: RECALL: 0.8601959428106148
+17/12/19 20:30:31 ERROR root: Total time taken: 16.503625543 seconds
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3).setMinInstancesPerNode(100)
+17/12/19 20:31:57 ERROR root: ACCURACY: 0.861926368889938
+17/12/19 20:31:58 ERROR root: PRECISION: 0.9945673237865655
+17/12/19 20:31:58 ERROR root: RECALL: 0.861926368889938
+17/12/19 20:31:58 ERROR root: Total time taken: 16.963756172 seconds
+
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3).setMinInstancesPerNode(500)
+17/12/19 20:32:51 ERROR root: ACCURACY: 0.8599259265744981
+17/12/19 20:32:52 ERROR root: PRECISION: 1.0
+17/12/19 20:32:52 ERROR root: RECALL: 0.8599259265744981
+17/12/19 20:32:52 ERROR root: Total time taken: 16.929922982 seconds
+
+    val rf = new DecisionTreeClassifier().setLabelCol("label").setFeaturesCol("features").setMaxBins(18979).setMaxDepth(3).setMinInstancesPerNode(1000)
+17/12/19 20:35:29 ERROR root: ACCURACY: 0.8617261754104227
+17/12/19 20:35:30 ERROR root: PRECISION: 1.0
+17/12/19 20:35:30 ERROR root: RECALL: 0.8617261754104227
+17/12/19 20:35:30 ERROR root: Total time taken: 16.594008469 seconds
+
+
+NAIVE BAYES:
+
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features")
+17/12/19 20:37:51 ERROR root: ACCURACY: 0.3557490374518726
+17/12/19 20:37:52 ERROR root: PRECISION: 0.17452702324304278
+17/12/19 20:37:52 ERROR root: RECALL: 0.35574903745187264
+17/12/19 20:37:52 ERROR root: Total time taken: 10.664847139 seconds
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features").setSmoothing(10)
+17/12/19 20:40:45 ERROR root: ACCURACY: 0.3460066723290982
+17/12/19 20:40:47 ERROR root: PRECISION: 0.1641658802138287
+17/12/19 20:40:47 ERROR root: RECALL: 0.3460066723290982
+17/12/19 20:40:47 ERROR root: Total time taken: 10.595758022 seconds
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features").setSmoothing(50)
+17/12/19 20:41:24 ERROR root: ACCURACY: 0.37073285721769195
+17/12/19 20:41:25 ERROR root: PRECISION: 0.5248774141848611
+17/12/19 20:41:25 ERROR root: RECALL: 0.370732857217692
+17/12/19 20:41:25 ERROR root: Total time taken: 9.913438892 seconds
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features").setSmoothing(100)
+17/12/19 20:42:14 ERROR root: ACCURACY: 0.3541339064192613
+17/12/19 20:42:15 ERROR root: PRECISION: 0.17415854403406658
+17/12/19 20:42:15 ERROR root: RECALL: 0.35413390641926135
+17/12/19 20:42:15 ERROR root: Total time taken: 11.502483437 seconds
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features").setSmoothing(500)
+17/12/19 20:43:05 ERROR root: ACCURACY: 0.3630071661693806
+17/12/19 20:43:06 ERROR root: PRECISION: 0.5174851761741079
+17/12/19 20:43:06 ERROR root: RECALL: 0.3630071661693806
+17/12/19 20:43:06 ERROR root: Total time taken: 9.569871812 seconds
+
+    val rf = new NaiveBayes().setLabelCol("label").setFeaturesCol("features").setSmoothing(1000)
+17/12/19 20:44:06 ERROR root: ACCURACY: 0.3690699756041912
+17/12/19 20:44:07 ERROR root: PRECISION: 0.5234696232102906
+17/12/19 20:44:07 ERROR root: RECALL: 0.3690699756041912
+17/12/19 20:44:07 ERROR root: Total time taken: 9.534603086 seconds
+
